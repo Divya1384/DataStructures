@@ -33,6 +33,25 @@ namespace Dequeue
             Console.WriteLine($"{dequeue.array[7]}");
             Console.WriteLine($"{dequeue.array[8]}");
             Console.WriteLine($"{dequeue.array[9]}");
+
+            Console.WriteLine("-----------------------------------------------");
+
+            Console.WriteLine("Delete from front");
+            Console.WriteLine($"{dequeue.GetFront()}");
+            dequeue.DeleteFromFront();
+            Console.WriteLine($"{dequeue.GetFront()}");
+            dequeue.DeleteFromFront();
+            Console.WriteLine($"{dequeue.GetFront()}");
+
+            Console.WriteLine("-----------------------------------------------");
+
+            Console.WriteLine("Delete from rear");
+            Console.WriteLine($"{dequeue.GetRear()}");
+            dequeue.DeleteFromRear();
+            Console.WriteLine($"{dequeue.GetRear()}");
+            dequeue.DeleteFromRear();
+            Console.WriteLine($"{dequeue.GetRear()}");
+
             Console.Read();
         }
     }
